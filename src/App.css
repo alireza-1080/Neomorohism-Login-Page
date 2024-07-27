@@ -1,0 +1,90 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #E4EBF5;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.app-container form {
+  width: 390px;
+  height: 580px;
+  padding: 40px 20px;
+  background-color: #E4EBF5;
+  box-shadow: 8px 8px 16px #b8c0cc,
+    -8px -8px 16px #ffffff;
+  border-radius: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  /* justify-items: center; */
+  align-content: flex-start;
+}
+
+.user-logo-container {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 64px 0px;
+  transform: scale(0.85);
+  justify-self: center;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+
+  background-color: #E4EBF5;
+  box-shadow: inset 0.3rem 0.3rem 0.6rem #c8d0e7, inset -0.3rem -0.3rem 0.6rem #fff;
+}
+
+.user-logo-container .user-logo-background {
+  background-color: #CEDFFF;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-logo-container .user-logo-background .icon {
+  font-size: 2.5rem;
+  color: #69A3FF;
+}
+
+.email-address-container input,
+.password-container input {
+  width: 100%;
+  padding: 0 16px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #E4EBF5;
+  box-shadow: inset 0.3rem 0.3rem 0.6rem #c8d0e7, inset -0.3rem -0.3rem 0.6rem #fff;
+}
+
+.password-container input {
+  margin: 36px 0;
+}
+
+.submit-button-container input {
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 900;
+  background-image: linear-gradient(to right, #66a1ff, #2f6dce);
+  transition: all 250ms ease-in-out;
+}
+
+.submit-button-container input:hover {
+  background-image: linear-gradient(to right, #2f6dce, #66a1ff);
+  letter-spacing: 3px;
+}
